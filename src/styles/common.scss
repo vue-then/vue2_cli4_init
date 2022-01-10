@@ -1,0 +1,199 @@
+@function px2rem($px) {
+  @return $px / 75+rem;
+}
+
+* {
+  touch-action: pan-y;
+}
+
+html {
+  height: 100%;
+  font-family: PingFangSC-Regular;
+
+  body {
+    height: 100%;
+
+    &.dialog-open {
+      width: 100%;
+    }
+
+    //#app {
+    //  height: 100%;
+    //  padding-top: px2rem(88);
+    //  box-sizing: border-box;
+    //  background: $default-bg-color;
+    //  position: relative;
+    //  #customerId {
+    //    width: 40px;
+    //    border-radius: 50%;
+    //    height: 40px;
+    //    background: black;
+    //    position: absolute;
+    //    top: 17rem;
+    //    right: 0;
+    //    z-index: 100
+    //  }
+    //}
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+button {
+  border-shadow: none;
+  border-width: 0;
+  background-color: $default-color;
+}
+
+input {
+  font-weight: normal;
+}
+.text-center{
+    text-align: center!important;
+}
+.text-left{
+    text-align: left!important;
+}
+.text-right{
+    text-align: right!important;
+}
+// 边框1px
+.pk-1px,
+.pk-1px-t,
+.pk-1px-b,
+.pk-1px-tb,
+.pk-1px-rb,
+.pk-1px-l,
+.pk-1px-r {
+  position: relative;
+}
+
+.pk-1px-t:before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 1px;
+  border-top: 1px solid $placeholder-color;
+  color: $placeholder-color;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+}
+
+.pk-1px-b:after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 1px;
+  border-bottom: 1px solid $placeholder-color;
+  color: $placeholder-color;
+  -webkit-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+}
+
+.pk-1px-l:before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1px;
+  bottom: 0;
+  border-left: 1px solid $placeholder-color;
+  color: $placeholder-color;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: scaleX(0.5);
+  transform: scaleX(0.5);
+}
+
+.pk-1px-r:after {
+  content: " ";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 1px;
+  bottom: 0;
+  border-right: 1px solid $placeholder-color;
+  color: $placeholder-color;
+  -webkit-transform-origin: 100% 0;
+  transform-origin: 100% 0;
+  -webkit-transform: scaleX(0.5);
+  transform: scaleX(0.5);
+}
+
+.pk-1px-rb:before {
+  content: " ";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 1px;
+  bottom: 0;
+  border-right: 1px solid $placeholder-color;
+  color: $placeholder-color;
+  -webkit-transform-origin: 100% 0;
+  transform-origin: 100% 0;
+  -webkit-transform: scaleX(0.5);
+  transform: scaleX(0.5);
+}
+
+.pk-1px-rb:after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 1px;
+  border-bottom: 1px solid $placeholder-color;
+  color: $placeholder-color;
+  -webkit-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+}
+
+.pk-1px-tb:before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 1px;
+  border-top: 1px solid $placeholder-color;
+  color: $placeholder-color;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+}
+
+.pk-1px-tb:after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 1px;
+  border-bottom: 1px solid $placeholder-color;
+  color: $placeholder-color;
+  -webkit-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+}
+
+.red{
+    color: red;
+}

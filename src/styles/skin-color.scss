@@ -1,0 +1,32 @@
+//------------- green style ----------------------
+
+// ---history-color to complie
+$border-color:#d9d9d9;
+$backwater-no-btn:#d9d9d9;
+$color-a: #fb5151;
+
+//---common---
+$primary-color:#d7af74;
+[data-theme="white"] {
+    $primary-color: #17c492;
+}
+
+[data-theme="red"] {
+    $primary-color: #ec414d;
+}
+
+[data-theme="gold"]  {
+    $primary-color: #d7af74;
+}
+[data-theme="violet"] {
+    $primary-color: #690794;
+}
+
+[data-theme="blue"] {
+    $primary-color: #5cbcff;
+}
+$gold-color:#d7af74;
+$mid-color: #17c492;
+// $primary-color: #ec414d;
+$default-color:#fff;
+$placeholder-color:#d9d9d9;
